@@ -1,0 +1,4 @@
+<app-add-todo (todoAdd)="addTodo($event)" ></app-add-todo>
+<div *ngIf="this.bool===false; else elseBlock"><app-todo-item></app-todo-item></div>
+<ng-template #elseBlock>
+</ng-template>
